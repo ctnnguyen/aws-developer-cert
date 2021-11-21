@@ -17,4 +17,4 @@
 - Linked together with high bandwidth, ultra-low latency networking
 - Region is formed with usually 3, min 2, max 6 AZs
 
-<img src="./images/region-azs.png" alt="availability zones" width="400" />
+<img src="../images/region-azs.png" alt="availability zones" width="400" />
