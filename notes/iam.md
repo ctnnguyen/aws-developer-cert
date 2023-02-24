@@ -11,6 +11,8 @@ IAM is a global service.
 - Access Keys: access AWS with CLI / SDK
 - Audit: credentials report and access advisor
 
+<img src="../images/iam-basics.png" width="500">
+
 ## Users
 - People within organization
 - Can be grouped

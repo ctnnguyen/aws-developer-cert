@@ -28,6 +28,8 @@
 - Hybrid Cloud: private and public cloud as unified platform
   - **Not public cloud mixed with legacy on-premises hardware (this is hybrid environment)**
 
+<img src="../images/cloud-variations.png" width="400">
+
 ## Service Models
 - Definition of what service you receive from a product
 - Which parts of infrastructure stack you are responsible for and which the vendor manages
@@ -42,6 +44,8 @@
   - Runtime - language-specific runtime environment (e.g. Java, Python)
   - Data
   - Application
+
+<img src="../images/service-models.png" alt="service-models" width="700">
 
 ### Variations
 - On-Premises
