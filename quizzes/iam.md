@@ -1,6 +1,6 @@
 # IAM
 
-1). What is a proper definition of an IAM Role?  
+1). What is a proper definition of an IAM Role?
 - [ ] IAM Users in multiple User Groups
 - [ ] An IAM entity that defines a set of permission for making requests to AWS services, and will be used by an AWS service
 - [ ] An IAM entity that defines a password policy for IAM Users
@@ -50,7 +50,7 @@
 
 5). What are IAM Policies?
 - [ ] A set of policies defines how AWS accounts interact with each other
-- [ ] JSON documents that define a set of permissions for making requests to AWS services and can be used by IAM Users, User Groups, and IAM Roles 
+- [ ] JSON documents that define a set of permissions for making requests to AWS services and can be used by IAM Users, User Groups, and IAM Roles
 - [ ] A set of policies define a password for IAM Users
 - [ ] A set of policies defined by AWS that show how customers interact with AWS
 
@@ -62,7 +62,7 @@
 
 6). Which principle should you apply regarding IAM Permissions?
 - [ ] Grant least privilege
-- [ ] Grant most privilege 
+- [ ] Grant most privilege
 - [ ] Grant more permission if your employee asks you to
 - [ ] Restrict root account permissions
 
@@ -74,7 +74,7 @@
 
 7). What should you do to increase your root account security
 - [ ] Remove permissions from the root account
-- [ ] Only access AWS services through AWS Command Line Interface (CLI) 
+- [ ] Only access AWS services through AWS Command Line Interface (CLI)
 - [ ] Enable Multi-Factor Authentication (MFA)
 - [ ] Don't create IAM Users, only access your AWS account using the root account
 
@@ -86,7 +86,7 @@
 
 8). IAM User Groups can contain IAM Users and other User Groups.
 - [ ] True
-- [ ] False 
+- [ ] False
 
 <details><summary>Answer</summary>
 <p>
@@ -96,7 +96,7 @@
 
 9). An IAM policy consists of one or more statements. A statement in an IAM Policy consists of the following, **except**:
 - [ ] Effect
-- [ ] Principal 
+- [ ] Principal
 - [ ] Version
 - [ ] Action
 - [ ] Resource
@@ -109,12 +109,34 @@
 
 10). According to the AWS Share Responsibility Model, which of the following is an AWS responsibility?
 - [ ] Rotate Access Key for IAM Users
-- [ ] Enable MFA for the root account and all IAM Users 
+- [ ] Enable MFA for the root account and all IAM Users
 - [ ] IAM Uers, User Groups, and IAM Policies
 - [ ] AWS Infrastructure
 
 <details><summary>Answer</summary>
 <p>
   AWS Infrastructure
+</p>
+</details>
+
+11). As per the IAM decision logic, what is the first step of access permissions for any resource in AWS? Choose the correct answer from the options below
+- [ ] default deny
+- [ ] an explicit deny
+- [ ] an allow
+- [ ] an explicit allow
+
+<details><summary>Answer</summary>
+<p>
+  default deny
+</p>
+</details>
+
+12). Can you assign roles to users in AWS?
+- [ ] true
+- [ ] false
+
+<details><summary>Answer</summary>
+<p>
+  false
 </p>
 </details>

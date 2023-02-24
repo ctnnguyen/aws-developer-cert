@@ -14,8 +14,14 @@ IAM is a global service.
 ## Users
 - People within organization
 - Can be grouped
-- Does not have to belong to group (_not_ recommended)
+- Does not _have_ to belong to group (_not_ recommended)
 - Can belong to multiple groups
+- **Maximum of 5000 users per account**
+- **IAM User can be a member of up to 10 groups**
+- Use roles used when number of users / services is uncertain
+- Each user must be explicitly given permissions (starts off without any permissions)
+- Dedicated to account (can't access other accounts)
+- **Globally resilient service (all data is secure across all aws regions)**
 
 ## Groups
 - Contain users
@@ -26,10 +32,16 @@ IAM is a global service.
 ## Permissions
 - Policies: JSON documents defining permissions to users/groups
 - Least privilege principle: user given minimum level of access to perform job functions
+- Priority of permissions:
+  - Explicit DENY
+  - Explicit ALLOW
+  - Default DENY (implicit) (if no explicit allow -> no access is granted)
 
 ### Inheritance
 - Group-level policy: all users inherit policy
 - Inline policy: Only applied to user
+  - Should only be used when special / exceptional allows or denies
+- Managed policy: Reusable policies that can be applied to multiple users, groups, and roles
 
 <img src="../images/policy-inheritance.png" alt="policy inheritance" height="250" />
 
@@ -67,6 +79,11 @@ IAM is a global service.
   - Universal Second Factor (U2F) security key: physical device that supports multiple root and IAM users with single security key (Example: YubiKey)
   - Hardware key fob: physical device with single token (Example: Gemalto)
   - Hardware key fob for AWS GovCloud: special key fob for government officials/compliance
+- Common factors:
+  - Knowledge - something you know, usernames, passwords
+  - Possession - something you have, bank card, MFA device/app
+  - Inherent - something you are, fingerprint, face, voice, or iris
+  - Location - location (physical), which network (corp or wifi)
 
 ## Roles
 - Grant permission to entities within AWS
@@ -76,6 +93,14 @@ IAM is a global service.
   - Services that need access to other resources
   
 <img src="../images/iam-roles.png" alt="iam roles" width="300" />
+
+## Access Keys
+- Long term credentials
+- Used for CLI access
+- IAM user can have as most 2 access keys
+- Can be created, deleted, mark as inactive, or mark as active
+- Must store secret access key at time of creation - cannot download later
+- IAM roles don't use access keys - only users
 
 ## Security Tools
 
